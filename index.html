@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inseok portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Ellie"
+    />
+    <meta name="author" content="inseok" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+     
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+          <i class="fab fa-d-and-d"></i>
+          <a href="#">inseok.yang</a>
+      </div>
+      <ul class="navbar__menu">
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My work</li>
+          <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/profile.jpg"
+          alt="Ellie's profile photo"
+          class="home__avatar"/> 
+        <h1 class="home__title">Hello, <br />I'm Web designer</h1>
+        <h2 class="home__description">
+          디자인과 퍼블리싱을 겸비한 <br />주니어 개발자 양인석입니다.
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+          저는 요리사라는 꿈을 꿔왔고 현장에서 요리를 해왔었습니다. 요리사는 반복적인 일상을 보내지만 순간순간 위기대처 능력이 중요한 업종입니다. 
+          순간순간의 아이디어와 자신이 가진 능력으로 새로운것을 만들어내거나 문제의 상황이 생겼을때 그러한 문제를 해결해나아가야하는 직업입니다.
+           저는 그러한 일들을 하며 일상을 보내다가 매너리즘에 빠지게 되었고그러한 상황이 생길 때마다 취미인 여행을 다니면서 사진을 찍고 혼자만의 
+           시간을 보내거나 다른 사람들과 이야기를 하며 어울려 여행생활을 보냈었습니다. 그러다 군대에 입대를 하게되고 다양한 사람들과 어울리며 다양한 임무를 
+           수행하기도하고 시간이 지나 부분대장 역활을 하며 분대장의 공백시 분대장 역할을 하면 분대를 이끌며 임무를 수행을 했었었습니다. 그렇게 전역할 쯤 사회로 
+           나가기전 군대 간부, 동기, 후임들과 다양한 이야기를 하며 요리사라는 직업 보다 다양한직업에 도전해보고 싶어 전역 후 국비지원을 통해 여러 학원을 찾아보고 
+           UI/UX엔지니어링 교육과정을 알게 되었고 등록하여 수강하게 되었습니다. 처음들어보는 수업이었고 다른 같은 수강생 동기들은 전공학과인 사람들이 많았고 저보다 
+           많은 경험이 있고 다양한 프로그램을 사용할 줄 알았고 디자인적인 모습도 실력이 상당했습니다. 하지만 선생님께는 제가 다른 분들에 비해 속도는 더디지만 노력만큼은 
+           배신하지 않는다 하셨고 선생님을 믿고 다양한 프로젝트도 해보고 동기들에게도 물어보며 친해지고 같이 협업하여 작업도 해가며 스스로 코딩도 해보며 점점 저만의 페이지를 
+           만들게 되었고 선생님도 짧지도 길지도 않은 시간동안 성장했다며 칭찬을 해주셨습니다. 남들보다는 느리다면 느릴 수 있지만 디양한 프로젝트와 코딩을 해보면서 나름 스스로 
+           성장하는것을 느꼈고 이제는 반응형 웹을 제작하고 자바스크립트와 제이쿼리를 이용해 동적인 페이지도 만들며 스스로 배우며 발전해 나아가고 있습니다. 앞으로도
+            저는 개발하는 즐거움을 가지고 다양하게 문제를 해결해 나아가면서 성장해 나아가고 싶습니다. 그래서 저의 후임이 본 받고 언제든지 질문해서 기술도 공유하며 성장해 나아갈 것입니다.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">HTML</h2>
+          <div class="major__description">
+           웹표준기반 제작,마크업기능
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+               <i class="fab fa-css3-alt"></i>
+          </div>
+          <h2 class="major__title">CSS</h2>
+          <p class="major__description">
+            디자인적 css기능,<br />
+            Sass사용
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+               <i class="fab fa-js"></i>
+          </div>
+          <h2 class="major__title">JavaScript</h2>
+          <p class="major__description">
+            JavaScript, JQuery를
+            <br />이용해 동적기능제작
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+               <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">PLAN</h2>
+          <div class="major__description">
+            기획 및 간단한 디자인툴사용
+          </div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/bucheon.gif"
+            alt="buchoen"
+            class="job__logo"
+          />
+         <div class="job__description">
+          <p class="job__name">
+           부천대학교 호텔외식 조리학과 (중퇴)
+          </p>
+          <p class="job__period">2015 year</p>
+         </div>
+        </div>
+        <div class="job">
+          <img
+            src="imgs/jobs/thejoeun.gif"
+            alt="thejoeun"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              더 조은 아카데미 (웹표준기반UI/UX엔지니어링)
+            </p>
+            <p class="job__period">2020.05~2020.10</p>
+           </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          다양한 스킬을 보유하고 있으며 간단한 포토샵과 일러스트를 이용하고 디자인 하면
+               기획을 하고 수정하며 기획을 바탕으로 할수있습니다.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>30%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 30%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JQuery</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Vue.JS</span>
+                <span>20%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 20%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>포토샵,일러스트</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>XD</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>GitHub</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+     <div class="section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">5</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="design">
+          Design <span class="category__count">1</span>
+        </button>
+        <button class="category__btn" data-filter="plan">
+          Plan <span class="category__count">1</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="#" class="project" target="blank" data-type="front-end">
+          <img
+            src="imgs/projects/nikon.jpg"
+            alt="nikonimage"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>NIKON IMAGE</h3>
+            <span>웹표준기반 반응형 웹 제작</span>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+          <img
+            class="project__img"
+            src="imgs/projects/kakako.jpg"
+            alt="kakao"
+          />
+          <div class="project__description">
+            <h3>카카오 영입</h3>
+            <span>이미지 슬라이더,웹표준기반 제작</span>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+          <img class="project__img" src="imgs/projects/kakaoT.jpg" alt="kakaoT" />
+          <div class="project__description">
+            <h3>카카오대리</h3>
+            <span>HTML, CSS, JQeury,웹표준기반</span>
+          </div>
+        </a>
+        <a href="#" class="project"  data-type="design">
+          <img class="project__img" src="imgs/projects/IMG_2757.JPG" alt="myphotodesign" />
+          <div class="project__description">
+            <h3>포트폴리오용디자인</h3>
+            <span>간단한 포토샵 디자인</span>
+          </div>
+        </a>
+        <a href="#" class="project" data-type="plan">
+          <img class="project__img" src="imgs/projects/인천공항.PNG" alt="incheonairport" />
+          <div class="project__description">
+            <h3>인천공항디자인기획</h3>
+            <span>웹페이지제작에 필요한 기획및 디자인시안</span>
+          </div>
+        </a>
+        <a href="#" class="project" data-type="plan">
+          <img class="project__img" src="imgs/projects/monitor-313011_1920.jpg" alt="#" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="#" class="project" data-type="design">
+          <img class="project__img" src="imgs/projects/logodesign.png" alt="로고디자인" />
+          <div class="project__description">
+            <h3>이름로고디자인</h3>
+            <span>이름이나,회사명 로고디자인</span>
+          </div>
+        </a>
+        <a href="#" class="project" data-type="front-end">
+          <img class="project__img" src="imgs/projects/monitor-313011_1920.jpg" alt="#" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+      </div>
+     </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+   <div class="section__container">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img
+          src="imgs/testimonial/안상현선생님이미지.jpg"
+          alt="People"
+          class="testimonial__avatar"
+        />
+        <div class="testimonial__speech-bubble">
+          <p>
+            처음 학습을 시작했을때는 속도는 다른 수강생분들에 비해 많이 느리긴했지만
+            자신 스스로가 복습과 꾸준한 연습을 통해 빠르시간내에 성장하였던 학생입니다.
+          </p>
+          <p class="name"><a href="">안상현 강사</a> / 더 조은 아카데미 컴퓨터학원</p>
+        </div>
+      </div>
+     
+   </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email"><a href="mailto:dlstjr702@gmail.com" title="메일보내기">dlstjr702@gmail.com</a> </h2>
+      <div class="contact__links">
+        <a href="https://github.com/dlstjr702/YANG-INSEOK" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        Designed By inseok
+      </p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
