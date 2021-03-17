@@ -1,0 +1,1477 @@
+@charset "utf-8";
+
+/* 전체영역 */
+body {
+  background-color: #000;
+}
+
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 헤더영역 */
+header {
+  position: fixed;
+  left: 15px;
+  top: 0;
+  width: 98%;
+  height: 80px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282c2e+0,0d0d0d+100&0.65+0,0+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(40, 44, 46, 0.65) 0%,
+    rgba(13, 13, 13, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(40, 44, 46, 0.65) 0%,
+    rgba(13, 13, 13, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 44, 46, 0.65) 0%,
+    rgba(13, 13, 13, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#a6282c2e',
+      endColorstr='#000d0d0d',
+      GradientType=0
+    ); /* IE6-9 */
+  z-index: 1000;
+}
+
+/* 로고영역 */
+header > .logo {
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  width: 200px;
+}
+header > .logo > a {
+  display: block;
+  width: 200px;
+}
+header > .logo > a > img {
+  display: block;
+  height: 20px;
+}
+
+/* 헤더네비1 */
+header > .hmnu1 {
+  position: absolute;
+  left: 330px;
+  top: 27px;
+}
+header > .hmnu1 > .cloud {
+  display: flex;
+}
+header > .hmnu1 > .cloud > li {
+  width: 100px;
+  text-align: center;
+}
+header > .hmnu1 > .cloud > li > a {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* 헤더네비2 */
+header > .hmnu2 {
+  position: absolute;
+  right: 0px;
+  top: 27px;
+}
+header > .hmnu2 > .lang {
+  display: flex;
+}
+header > .hmnu2 > .lang > li {
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+header > .hmnu2 > .lang > li:nth-child(even) {
+  border-right: 1px solid #fff;
+}
+header > .hmnu2 > .lang > li:last-child {
+  width: 52px;
+  padding-left: 20px;
+}
+header > .hmnu2 > .lang > li > a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+}
+header > .hmnu2 > .lang > li > a > img {
+  display: block;
+  height: 25px;
+  font-weight: 800;
+}
+
+/* 언어 */
+header > .hmnu2 > .lang > li > ol {
+  position: absolute;
+  right: -30px;
+  top: 26px;
+
+  background-color: #262626;
+  border: 1px solid #fff;
+}
+header > .hmnu2 > .lang > li > ol > li {
+  width: 100px;
+  height: 20px;
+  display: none;
+}
+header > .hmnu2 > .lang > li > ol > li > a {
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* 섹션영역 */
+
+/* mmu1 */
+.mmu1 {
+  margin-left: 15px;
+  background-image: url(../images/nikon_com.png);
+  width: 98%;
+  height: 940px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu1 > .mmu1_tt {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+}
+.mmu1 > .mmu1_tt > h2 {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: normal;
+}
+.mmu1 > .mmu1_tt > p {
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.mmu1 > .mmu1_btn {
+  position: absolute;
+  left: 43%;
+  top: 55%;
+}
+.mmu1 > .mmu1_btn > button {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.mmu1 > .mmu1_tx {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.mmu1 > .mmu1_tx > p {
+  width: 120px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.mmu1 > .mmu1_tx > a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* mmu2 */
+
+.mmu2 {
+  position: relative;
+  background-image: url(../images/nikon_phone.png);
+  width: 100%;
+  height: 960px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu2 > .mmu2_tt {
+  position: absolute;
+  left: 200px;
+  bottom: 200px;
+}
+.mmu2 > .mmu2_tt > h2 {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: normal;
+}
+.mmu2 > .mmu2_tt > p {
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 20px;
+}
+/* mmu3 */
+
+.mmu3 {
+  position: relative;
+  background-image: url(../images/nikon_image.png);
+  width: 100%;
+  height: 680px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu3 > .mmu3_tt {
+  position: absolute;
+  left: 370px;
+  bottom: 200px;
+}
+.mmu3 > .mmu3_tt > h2 {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: normal;
+}
+.mmu3 > .mmu3_tt > p {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* mmu4 */
+
+.mmu4 {
+  position: relative;
+  background-image: url(../images/nikon_face.png);
+  width: 100%;
+  height: 700px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu4 > .mmu4_btn {
+  position: absolute;
+  left: 43%;
+  bottom: -150px;
+}
+.mmu4 > .mmu4_btn > button {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+/* mmu5 */
+
+.mmu5 {
+  position: relative;
+  background-image: url(../images/nikon_cam.png);
+  width: 100%;
+  height: 680px;
+  margin-top: 230px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu5 > .mmu5_tt {
+  position: absolute;
+  left: 600px;
+  bottom: 80px;
+}
+.mmu5 > .mmu5_tt > h2 {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: normal;
+}
+.mmu5 > .mmu5_tt > p {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* mmu6 */
+
+.mmu6 {
+  position: relative;
+  background-image: url(../images/nikon_web.png);
+  width: 100%;
+  height: 850px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu6 > .mmu6_btn {
+  position: absolute;
+  left: 43%;
+  bottom: -150px;
+}
+.mmu6 > .mmu6_btn > button {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+/* mmu7 */
+
+.mmu7 {
+  position: relative;
+  background-image: url(../images/nikon_hands.png);
+  width: 100%;
+  height: 680px;
+  margin-top: 230px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu7 > .mmu7_tt {
+  position: absolute;
+  left: 600px;
+  bottom: 80px;
+}
+.mmu7 > .mmu7_tt > h2 {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: normal;
+}
+.mmu7 > .mmu7_tt > p {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* mmu8 */
+
+.mmu8 {
+  position: relative;
+  background-image: url(../images/nikon_poshop.png);
+  width: 100%;
+  height: 760px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu8 > .mmu8_btn {
+  position: absolute;
+  left: 43%;
+  bottom: -150px;
+}
+.mmu8 > .mmu8_btn > button {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+/* mmu9 */
+.mmu9 {
+  position: relative;
+  margin-left: 15px;
+  background-image: url(../images/nikon_sky.png);
+  width: 98%;
+  height: 1200px;
+  margin-top: 200px;
+  line-height: 50px;
+  text-align: center;
+  background-size: cover;
+}
+.mmu9 > .mmu9_tt {
+  position: absolute;
+  left: 450px;
+  bottom: 250px;
+}
+.mmu9 > .mmu9_tt > h2 {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: normal;
+}
+
+.mmu9 > .mmu9_btn {
+  position: absolute;
+  left: 43%;
+  bottom: 100px;
+}
+.mmu9 > .mmu9_btn > button {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+/* 푸터영역 */
+/* 이미지영역 */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+footer > .foot_frame {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 40px;
+}
+footer > .foot_frame > img {
+  display: block;
+}
+
+/* 푸터네비1 */
+
+footer > .foot_nav1 {
+  position: absolute;
+  left: 40%;
+  top: 10px;
+}
+footer > .foot_nav1 > .un_nav1 {
+  display: flex;
+}
+footer > .foot_nav1 > .un_nav1 > li {
+  width: 65px;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+footer > .foot_nav1 > .un_nav1 > li:last-child {
+  border-right: none;
+}
+footer > .foot_nav1 > .un_nav1 > li > a {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* 푸터네비2 */
+footer > .foot_nav2 {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+footer > .foot_nav2 > .un_nav2 {
+  display: flex;
+}
+footer > .foot_nav2 > .un_nav2 > li {
+  width: 160px;
+  border-right: 1px solid #dfdfdf;
+  text-align: center;
+}
+footer > .foot_nav2 > .un_nav2 > li > a {
+  color: #dfdfdf;
+  font-size: 10px;
+}
+
+/* 만든사람 */
+footer > address {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  /* 전체영역 */
+  body {
+    background-color: #000;
+  }
+
+  #wrap {
+    width: 992px;
+    margin: 0 auto;
+  }
+
+  /* 헤더영역 */
+  header {
+    position: fixed;
+    left: 15px;
+    top: 0;
+    width: 98%;
+    height: 80px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282c2e+0,0d0d0d+100&0.65+0,0+100 */
+    background: -moz-linear-gradient(
+      top,
+      rgba(40, 44, 46, 0.65) 0%,
+      rgba(13, 13, 13, 0) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(40, 44, 46, 0.65) 0%,
+      rgba(13, 13, 13, 0) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(40, 44, 46, 0.65) 0%,
+      rgba(13, 13, 13, 0) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#a6282c2e',
+        endColorstr='#000d0d0d',
+        GradientType=0
+      ); /* IE6-9 */
+    z-index: 1000;
+  }
+
+  /* 로고영역 */
+  header > .logo {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    width: 200px;
+  }
+  header > .logo > a {
+    display: block;
+    width: 200px;
+  }
+  header > .logo > a > img {
+    display: block;
+    height: 20px;
+  }
+
+  /* 헤더네비1 */
+  header > .hmnu1 {
+    position: absolute;
+    left: 330px;
+    top: 27px;
+  }
+  header > .hmnu1 > .cloud {
+    display: flex;
+  }
+  header > .hmnu1 > .cloud > li {
+    width: 100px;
+    text-align: center;
+  }
+  header > .hmnu1 > .cloud > li > a {
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  /* 헤더네비2 */
+  header > .hmnu2 {
+    position: absolute;
+    right: 0px;
+    top: 27px;
+  }
+  header > .hmnu2 > .lang {
+    display: flex;
+  }
+  header > .hmnu2 > .lang > li {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  header > .hmnu2 > .lang > li:nth-child(even) {
+    border-right: 1px solid #fff;
+  }
+  header > .hmnu2 > .lang > li:last-child {
+    width: 52px;
+    padding-left: 20px;
+  }
+  header > .hmnu2 > .lang > li > a {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  header > .hmnu2 > .lang > li > a > img {
+    display: block;
+    height: 25px;
+    font-weight: 800;
+  }
+
+  /* 언어 */
+  header > .hmnu2 > .lang > li > ol {
+    position: absolute;
+    right: -30px;
+    top: 26px;
+
+    background-color: #262626;
+    border: 1px solid #fff;
+  }
+  header > .hmnu2 > .lang > li > ol > li {
+    width: 100px;
+    height: 20px;
+    display: none;
+  }
+  header > .hmnu2 > .lang > li > ol > li > a {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  /* 섹션영역 */
+
+  /* mmu1 */
+  .mmu1 {
+    margin-left: 15px;
+    background-image: url(../images/nikon_com.png);
+    width: 98%;
+    height: 940px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu1 > .mmu1_tt {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+  }
+  .mmu1 > .mmu1_tt > h2 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: normal;
+  }
+  .mmu1 > .mmu1_tt > p {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .mmu1 > .mmu1_btn {
+    position: absolute;
+    left: 43%;
+    top: 55%;
+  }
+  .mmu1 > .mmu1_btn > button {
+    display: block;
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  .mmu1 > .mmu1_tx {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .mmu1 > .mmu1_tx > p {
+    width: 120px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .mmu1 > .mmu1_tx > a {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  /* mmu2 */
+
+  .mmu2 {
+    position: relative;
+    background-image: url(../images/nikon_phone.png);
+    width: 100%;
+    height: 960px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu2 > .mmu2_tt {
+    position: absolute;
+    left: 200px;
+    bottom: 200px;
+  }
+  .mmu2 > .mmu2_tt > h2 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: normal;
+  }
+  .mmu2 > .mmu2_tt > p {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  /* mmu3 */
+
+  .mmu3 {
+    position: relative;
+    background-image: url(../images/nikon_image.png);
+    width: 100%;
+    height: 680px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu3 > .mmu3_tt {
+    position: absolute;
+    left: 370px;
+    bottom: 200px;
+  }
+  .mmu3 > .mmu3_tt > h2 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: normal;
+  }
+  .mmu3 > .mmu3_tt > p {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  /* mmu4 */
+
+  .mmu4 {
+    position: relative;
+    background-image: url(../images/nikon_face.png);
+    width: 100%;
+    height: 700px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu4 > .mmu4_btn {
+    position: absolute;
+    left: 43%;
+    bottom: -150px;
+  }
+  .mmu4 > .mmu4_btn > button {
+    display: block;
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* mmu5 */
+
+  .mmu5 {
+    position: relative;
+    background-image: url(../images/nikon_cam.png);
+    width: 100%;
+    height: 680px;
+    margin-top: 230px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu5 > .mmu5_tt {
+    position: absolute;
+    left: 600px;
+    bottom: 80px;
+  }
+  .mmu5 > .mmu5_tt > h2 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: normal;
+  }
+  .mmu5 > .mmu5_tt > p {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  /* mmu6 */
+
+  .mmu6 {
+    position: relative;
+    background-image: url(../images/nikon_web.png);
+    width: 100%;
+    height: 850px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu6 > .mmu6_btn {
+    position: absolute;
+    left: 43%;
+    bottom: -150px;
+  }
+  .mmu6 > .mmu6_btn > button {
+    display: block;
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* mmu7 */
+
+  .mmu7 {
+    position: relative;
+    background-image: url(../images/nikon_hands.png);
+    width: 100%;
+    height: 680px;
+    margin-top: 230px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu7 > .mmu7_tt {
+    position: absolute;
+    left: 600px;
+    bottom: 80px;
+  }
+  .mmu7 > .mmu7_tt > h2 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: normal;
+  }
+  .mmu7 > .mmu7_tt > p {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  /* mmu8 */
+
+  .mmu8 {
+    position: relative;
+    background-image: url(../images/nikon_poshop.png);
+    width: 100%;
+    height: 760px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu8 > .mmu8_btn {
+    position: absolute;
+    left: 43%;
+    bottom: -150px;
+  }
+  .mmu8 > .mmu8_btn > button {
+    display: block;
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* mmu9 */
+  .mmu9 {
+    position: relative;
+    margin-left: 15px;
+    background-image: url(../images/nikon_sky.png);
+    width: 98%;
+    height: 1200px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu9 > .mmu9_tt {
+    position: absolute;
+    left: 450px;
+    bottom: 250px;
+  }
+  .mmu9 > .mmu9_tt > h2 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: normal;
+  }
+
+  .mmu9 > .mmu9_btn {
+    position: absolute;
+    left: 43%;
+    bottom: 100px;
+  }
+  .mmu9 > .mmu9_btn > button {
+    display: block;
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* 푸터영역 */
+  /* 이미지영역 */
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+  footer > .foot_frame {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 40px;
+  }
+  footer > .foot_frame > img {
+    display: block;
+  }
+
+  /* 푸터네비1 */
+
+  footer > .foot_nav1 {
+    position: absolute;
+    left: 40%;
+    top: 10px;
+  }
+  footer > .foot_nav1 > .un_nav1 {
+    display: flex;
+  }
+  footer > .foot_nav1 > .un_nav1 > li {
+    width: 65px;
+    text-align: center;
+    border-right: 1px solid #fff;
+  }
+  footer > .foot_nav1 > .un_nav1 > li:last-child {
+    border-right: none;
+  }
+  footer > .foot_nav1 > .un_nav1 > li > a {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  /* 푸터네비2 */
+  footer > .foot_nav2 {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
+  footer > .foot_nav2 > .un_nav2 {
+    display: flex;
+  }
+  footer > .foot_nav2 > .un_nav2 > li {
+    width: 160px;
+    border-right: 1px solid #dfdfdf;
+    text-align: center;
+  }
+  footer > .foot_nav2 > .un_nav2 > li > a {
+    color: #dfdfdf;
+    font-size: 10px;
+  }
+
+  /* 만든사람 */
+  footer > address {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  /* 전체영역 */
+  body {
+    background-color: #000;
+  }
+
+  #wrap {
+    width: 699px;
+    margin: 0 auto;
+  }
+
+  /* 헤더영역 */
+  header {
+    position: fixed;
+    left: 15px;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282c2e+0,0d0d0d+100&0.65+0,0+100 */
+    background: -moz-linear-gradient(
+      top,
+      rgba(40, 44, 46, 0.65) 0%,
+      rgba(13, 13, 13, 0) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(40, 44, 46, 0.65) 0%,
+      rgba(13, 13, 13, 0) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(40, 44, 46, 0.65) 0%,
+      rgba(13, 13, 13, 0) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#a6282c2e',
+        endColorstr='#000d0d0d',
+        GradientType=0
+      ); /* IE6-9 */
+    z-index: 1000;
+  }
+
+  /* 로고영역 */
+  header > .logo {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    width: 80px;
+  }
+  header > .logo > a {
+    display: block;
+    width: 80px;
+  }
+  header > .logo > a > img {
+    display: block;
+    height: 18px;
+  }
+
+  /* 헤더네비1 */
+  header > .hmnu1 {
+    display: none;
+  }
+
+  /* 헤더네비2 */
+  header > .hmnu2 {
+    position: absolute;
+    right: 0px;
+    top: 27px;
+  }
+  header > .hmnu2 > .lang {
+    display: flex;
+  }
+  header > .hmnu2 > .lang > li {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  header > .hmnu2 > .lang > li:nth-child(even) {
+    border-right: 1px solid #fff;
+  }
+  header > .hmnu2 > .lang > li:last-child {
+    width: 52px;
+    padding-left: 20px;
+  }
+  header > .hmnu2 > .lang > li > a {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  header > .hmnu2 > .lang > li > a > img {
+    display: block;
+    height: 25px;
+    font-weight: 800;
+  }
+
+  /* 언어 */
+  header > .hmnu2 > .lang > li > ol {
+    position: absolute;
+    right: -30px;
+    top: 26px;
+
+    background-color: #262626;
+    border: 1px solid #fff;
+  }
+  header > .hmnu2 > .lang > li > ol > li {
+    width: 100px;
+    height: 20px;
+    display: none;
+  }
+  header > .hmnu2 > .lang > li > ol > li > a {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  /* 섹션영역 */
+
+  /* mmu1 */
+  .mmu1 {
+    width: 100%;
+    height: 910px;
+    margin-left: -35px;
+    line-height: 20px;
+    text-align: center;
+    background-image: url(../images/nikon_com.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  .mmu1 > .mmu1_tt {
+    position: absolute;
+    left: 100px;
+    top: 360px;
+  }
+  .mmu1 > .mmu1_tt > h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  .mmu1 > .mmu1_tt > p {
+    color: #ffffff;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+
+  .mmu1 > .mmu1_btn {
+    position: absolute;
+    left: 80px;
+    top: 440px;
+  }
+  .mmu1 > .mmu1_btn > button {
+    display: block;
+    width: 420px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  .mmu1 > .mmu1_tx {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .mmu1 > .mmu1_tx > p {
+    width: 120px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .mmu1 > .mmu1_tx > a {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+  /* mmu2 */
+
+  .mmu2 {
+    position: relative;
+    background-image: url(../images/nikon_phone.png);
+    width: 100%;
+    height: 400px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu2 > .mmu2_tt {
+    position: absolute;
+    left: 15px;
+    bottom: 100px;
+  }
+  .mmu2 > .mmu2_tt > h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  .mmu2 > .mmu2_tt > p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: -70px;
+  }
+  /* mmu3 */
+
+  .mmu3 {
+    position: relative;
+    background-image: url(../images/nikon_image.png);
+    background-position: -50px center;
+    width: 100%;
+    height: 300px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu3 > .mmu3_tt {
+    position: absolute;
+    left: -50px;
+    bottom: -200px;
+  }
+  .mmu3 > .mmu3_tt > h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  .mmu3 > .mmu3_tt > p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  /* mmu4 */
+
+  .mmu4 {
+    position: relative;
+    background-image: url(../images/nikon_face.png);
+    background-position: -50px 0;
+    width: 100%;
+    height: 250px;
+    margin-top: 250px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu4 > .mmu4_btn {
+    position: absolute;
+    left: 80px;
+    bottom: -150px;
+  }
+  .mmu4 > .mmu4_btn > button {
+    display: block;
+    width: 420px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* mmu5 */
+
+  .mmu5 {
+    position: relative;
+    background-image: url(../images/nikon_cam.png);
+    width: 100%;
+    height: 300px;
+    margin-top: 230px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu5 > .mmu5_tt {
+    position: absolute;
+    left: 0px;
+    bottom: -140px;
+  }
+  .mmu5 > .mmu5_tt > h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  .mmu5 > .mmu5_tt > p {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  /* mmu6 */
+
+  .mmu6 {
+    position: relative;
+    background-image: url(../images/nikon_web.png);
+    background-position: -50px center;
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu6 > .mmu6_btn {
+    position: absolute;
+    left: 80px;
+    bottom: -80px;
+  }
+  .mmu6 > .mmu6_btn > button {
+    display: block;
+    width: 420px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* mmu7 */
+
+  .mmu7 {
+    position: relative;
+    background-image: url(../images/nikon_hands.png);
+    background-position: -100px 0;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu7 > .mmu7_tt {
+    position: absolute;
+    left: 60px;
+    bottom: -180px;
+  }
+  .mmu7 > .mmu7_tt > h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .mmu7 > .mmu7_tt > p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  /* mmu8 */
+
+  .mmu8 {
+    position: relative;
+    background-image: url(../images/nikon_poshop.png);
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+  }
+  .mmu8 > .mmu8_btn {
+    position: absolute;
+    left: 80px;
+    bottom: -150px;
+  }
+  .mmu8 > .mmu8_btn > button {
+    display: block;
+    width: 420px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* mmu9 */
+  .mmu9 {
+    position: relative;
+    margin-left: 15px;
+    background-image: url(../images/nikon_sky.png);
+    background-position: -150px 0;
+    width: 100%;
+    height: 400px;
+    margin-top: 200px;
+    line-height: 50px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .mmu9 > .mmu9_tt {
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+  }
+  .mmu9 > .mmu9_tt > h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  .mmu9 > .mmu9_btn {
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+  }
+  .mmu9 > .mmu9_btn > button {
+    display: block;
+    width: 420px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  /* 푸터영역 */
+  /* 이미지영역 */
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 120px;
+  }
+  footer > .foot_frame {
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    width: 40px;
+  }
+  footer > .foot_frame > img {
+    display: block;
+  }
+
+  /* 푸터네비1 */
+
+  footer > .foot_nav1 {
+    display: none;
+  }
+
+  /* 푸터네비2 */
+  footer > .foot_nav2 {
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+  }
+  footer > .foot_nav2 > .un_nav2 {
+    display: flex;
+  }
+  footer > .foot_nav2 > .un_nav2 > li {
+    width: 140px;
+    border-right: 1px solid #dfdfdf;
+  }
+  footer > .foot_nav2 > .un_nav2 > li > a {
+    color: #dfdfdf;
+    font-size: 10px;
+  }
+
+  /* 만든사람 */
+  footer > address {
+    display: none;
+  }
+}

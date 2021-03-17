@@ -1,0 +1,2029 @@
+@charset "utf-8";
+
+
+#wrap{
+     display: flex;
+     position: relative;
+}
+
+/* 자기소개 */
+.about{
+     
+     width: 35%;
+     height: 900px;
+     background-color: gray;
+     }
+
+.about>a>img{
+     display: block;
+     width: 100%;
+     height: 935px;
+}
+.about>a>img:hover{
+     opacity: 60%;
+}
+/* 모달창 */
+.modar{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+     width: 100%;
+     height: 935px;
+     text-align: center;
+     z-index: 200;
+     background-color: #fff;
+}
+.modar>.intro{
+   display: flex;
+}
+
+.modar>.intro>.left{
+     width: 50%;
+     height: 935px;
+     text-align: center;
+}
+.modar>.intro>.left>img{
+     display: block;
+     width: 880px;
+     height: 300px;
+     margin-top: 30px;
+     margin-left: 35px;
+    
+}
+.modar>.intro>.left>p{
+     margin-top: 20px;
+     padding:10px 50px;
+     line-height: 40px;
+     text-align: left;
+     font-weight: 800;
+     font-size:20px;
+}
+
+
+.modar>.intro>.right{
+     width: 50%;
+     height: 935px;
+}
+.modar>.intro>.right>p{
+     margin-top: 40px;
+     padding:10px 50px;
+     line-height: 40px;
+     text-align: left;
+     font-weight: 800;
+     font-size:20px;
+}
+.modar>.intro>.right>img{
+     display: block;
+     width: 880px;
+     height: 300px;
+     margin-top: 20px;
+     margin-left: 35px;
+    
+}
+.modar>button{
+     width: 100px;
+     height: 35px;
+     position: absolute;
+     top: 0;
+     right: 20px;
+     color:#fff;
+     font-weight: 800;
+     font-size: 20px;
+     background-color: #000;
+     border: none;
+}
+.modar>button:hover{
+
+     background-color: red;
+     border: none;
+}
+
+/* 모니터 설명창 */
+/* 1번설명 */
+.ex1{
+     display: none;
+     position: absolute;
+     top: 25%;
+     left:38%;
+     width: 500px;
+     height: 500px;
+     text-align: center;
+     background-color: #fff;
+     z-index: 1000;
+     border: 2px solid #000;
+     border-radius: 30px;
+}
+.ex1>img{
+     display: block;
+     width: 500px;
+}
+.ex1>h3{
+     width: 100%;
+     height: 20px;
+     font-size: 18px;
+}
+.ex1>p{
+     height: 80px;
+     line-height: 80px;
+     font-weight: 800;
+}
+.ex1>button{
+     width: 80px;
+     height: 30px;
+     font-weight: bold;
+     font-size: 15px;
+     background-color:red;
+     border: none;
+}
+
+/* 2번설명 */
+.ex2{
+     display: none;
+     position: absolute;
+     top: 25%;
+     left:38%;
+     width: 500px;
+     height: 500px;
+     text-align: center;
+     background-color: #fff;
+     z-index: 1100;
+     border: 2px solid #000;
+     border-radius: 30px;
+}
+.ex2>img{
+     display: block;
+     width: 500px;
+}
+.ex2>h3{
+     width: 100%;
+     height: 20px;
+     font-size: 18px;
+}
+.ex2>p{
+     height: 80px;
+     line-height: 80px;
+     font-weight: 800;
+}
+.ex2>button{
+     width: 80px;
+     height: 30px;
+     font-weight: bold;
+     font-size: 15px;
+     background-color:red;
+     border: none;
+}
+
+/* 3번설명 */
+.ex3{
+     display: none;
+     position: absolute;
+     top: 25%;
+     left:38%;
+     width: 500px;
+     height: 500px;
+     text-align: center;
+     background-color: #fff;
+     z-index: 1200;
+     border: 2px solid #000;
+     border-radius: 30px;
+}
+.ex3>img{
+     display: block;
+     width: 500px;
+}
+.ex3>h3{
+     width: 100%;
+     height: 20px;
+     font-size: 18px;
+}
+.ex3>p{
+     height: 80px;
+     line-height: 80px;
+     font-weight: 800;
+}
+.ex3>button{
+     width: 80px;
+     height: 30px;
+     font-weight: bold;
+     font-size: 15px;
+     background-color:red;
+     border: none;
+}
+/* 4번설명 */
+
+/* 나의능력 */
+.right{
+     width: 65%;
+}
+
+
+/* 스킬 */
+
+.right>.skill{
+     display: flex;
+     width: 100%;
+     height: 400px;
+     text-align: center;
+     background-color: rgb(246, 246, 213);
+}
+
+.right>.skill>.skill_line{
+     width: 65%;
+}
+.right>.skill>.skill_line>li{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 50px;
+     margin-top: 5px;
+}
+.right>.skill>.skill_line>li>img{
+     display: block;
+     width: 50px;
+     border-radius: 50px;
+}
+.right>.skill>.skill_line>li>p{
+     width: 400px;
+     height: 20px;
+     position: relative;
+     line-height: 20px;
+     font-size: 20px;
+     font-weight: bold;
+     background-color: rgb(193, 240, 241);
+     border-radius: 40px;
+}
+
+
+   /* 에니메이션효과 */
+   /* html */
+   .right>.skill>.skill_line>li>.html {
+     border: 1px solid #ffffff;
+     padding: 2% 14%;
+     position: relative;
+     z-index: 1;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+ }
+ .right>.skill>.skill_line>li>.html:after {
+     content: "";
+     width: 0%;
+     height: 100%;
+     top: 0;
+     position: absolute;
+     left: 0;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+     background: #ffffff;
+     border-radius: 40px;
+ }
+ .right>.skill>.skill_line>li>.html:hover {
+     color: #333;
+ }
+ .right>.skill>.skill_line>li>.html:hover:after {
+     width: 90%;
+     z-index: -1;
+ }
+
+/* css */
+.right>.skill>.skill_line>li>.css {
+     border: 1px solid #ffffff;
+     padding: 2% 14%;
+     position: relative;
+     z-index: 1;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+ }
+ .right>.skill>.skill_line>li>.css:after {
+     content: "";
+     width: 0%;
+     height: 100%;
+     top: 0;
+     position: absolute;
+     left: 0;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+     background: #ffffff;
+     border-radius: 40px;
+ }
+ .right>.skill>.skill_line>li>.css:hover {
+     color: #333;
+ }
+ .right>.skill>.skill_line>li>.css:hover:after {
+     width: 90%;
+     z-index: -1;
+ }
+/* js */
+.right>.skill>.skill_line>li>.js {
+     border: 1px solid #ffffff;
+     padding: 2% 14%;
+     position: relative;
+     z-index: 1;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+ }
+ .right>.skill>.skill_line>li>.js:after {
+     content: "";
+     width: 0%;
+     height: 100%;
+     top: 0;
+     position: absolute;
+     left: 0;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+     background: #ffffff;
+     border-radius: 40px;
+ }
+ .right>.skill>.skill_line>li>.js:hover {
+     color: #333;
+ }
+ .right>.skill>.skill_line>li>.js:hover:after {
+     width: 30%;
+     z-index: -1;
+ }
+/* ps */
+.right>.skill>.skill_line>li>.ps {
+     border: 1px solid #ffffff;
+     padding: 2% 14%;
+     position: relative;
+     z-index: 1;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+ }
+ .right>.skill>.skill_line>li>.ps:after {
+     content: "";
+     width: 0%;
+     height: 100%;
+     top: 0;
+     position: absolute;
+     left: 0;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+     background: #ffffff;
+     border-radius: 40px;
+ }
+ .right>.skill>.skill_line>li>.ps:hover {
+     color: #333;
+ }
+ .right>.skill>.skill_line>li>.ps:hover:after {
+     width: 90%;
+     z-index: -1;
+ }
+/* il */
+.right>.skill>.skill_line>li>.il {
+     border: 1px solid #ffffff;
+     padding: 2% 14%;
+     position: relative;
+     z-index: 1;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+ }
+ .right>.skill>.skill_line>li>.il:after {
+     content: "";
+     width: 0%;
+     height: 100%;
+     top: 0;
+     position: absolute;
+     left: 0;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+     background: #ffffff;
+     border-radius: 40px;
+ }
+ .right>.skill>.skill_line>li>.il:hover {
+     color: #333;
+ }
+ .right>.skill>.skill_line>li>.il:hover:after {
+     width: 70%;
+     z-index: -1;
+ }
+/* sass*/
+.right>.skill>.skill_line>li>.sass {
+     border: 1px solid #ffffff;
+     padding: 2% 14%;
+     position: relative;
+     z-index: 1;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+ }
+ .right>.skill>.skill_line>li>.sass:after {
+     content: "";
+     width: 0%;
+     height: 100%;
+     top: 0;
+     position: absolute;
+     left: 0;
+     -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+     -ms-transition: all 0.4s;
+     -o-transition: all 0.4s;
+     transition: all 0.4s;
+     background: #ffffff;
+     border-radius: 40px;
+ }
+ .right>.skill>.skill_line>li>.sass:hover {
+     color: #333;
+ }
+ .right>.skill>.skill_line>li>.sass:hover:after {
+     width: 70%;
+     z-index: -1;
+ }
+
+
+
+/* 콘텍트 */
+.right>.skill>.contact{
+     width: 35%;
+     line-height: 200px;
+     padding-top: 120px;
+     padding-left: 60px;
+     background-color: rgb(155, 157, 161);
+}
+
+.right>.skill>.contact>img{
+     display: block;
+     width: 50px;
+     height: 50px;
+     margin-left: 150px;
+}
+.right>.skill>.contact>p{
+     width: 350px;
+     height: 50px;
+     line-height: 50px;
+     color: #fff;
+     font-weight: 800;
+     font-size: 20px;
+}
+
+/* 포트폴리오 */
+
+.right>.portfolio{
+     overflow: hidden;
+     position: relative;
+     width: 100%;
+     height: 500px;
+     
+     
+}
+
+.right>.portfolio>h2{
+     height: 80px;
+     padding-top: 20px;
+     color: blue;
+     line-height: 80px;
+     text-align: center;
+     font-size: 30px;
+}
+.right>.portfolio>.frame{
+     display: flex;
+     /* overflow: hidden; */
+     position: absolute;
+     left: 0;
+     top: 100px;
+     width: 1224px;
+     line-height: 300px;
+     z-index: 100;
+     
+}
+.right>.portfolio>.frame>div{
+     margin-left: 8px;
+     width: 400px;
+    
+}
+/* 1 */
+.right>.portfolio>.frame>.frame1{}
+
+.right>.portfolio>.frame>.frame1>a{
+     display: block;
+     color: white;
+     font-size: 30px;
+}
+.right>.portfolio>.frame>.frame1>a>img{
+     display: block;
+     width: 400px;
+}
+/* 2 */
+.right>.portfolio>.frame>.frame2{}
+
+.right>.portfolio>.frame>.frame2>a{
+     display: block;
+     color: white;
+     font-size: 30px;
+}
+.right>.portfolio>.frame>.frame2>a>img{
+     display: block;
+     width: 400px;
+}
+/* 3 */
+.right>.portfolio>.frame>.frame3{}
+
+.right>.portfolio>.frame>.frame3>a{
+     display: block;
+     color: white;
+     font-size: 30px;
+}
+.right>.portfolio>.frame>.frame3>a>img{
+     display: block;
+     width: 400px;
+}
+/* 4 */
+.right>.portfolio>.frame>.frame4{}
+
+.right>.portfolio>.frame>.frame4>a{
+     display: block;
+     color: white;
+     font-size: 30px;
+}
+.right>.portfolio>.frame>.frame4>a>img{
+     display: block;
+     width: 400px;
+}
+
+
+
+
+/* 푸터영역 */
+.right>.footer{
+     width: 100%;
+     height: 35px;
+     color:#fff;
+     text-align: center;
+     line-height: 35px;
+     font-weight: 800;
+     background-color: rgb(105, 105, 105);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+     #wrap{
+          display: flex;
+          position: relative;
+          width: 100%;
+     }
+     
+     /* 자기소개 */
+     .about{
+          
+          width: 100%;
+          height: 605px;
+          background-color: gray;
+          }
+     
+     .about>a>img{
+          display: block;
+          width: 100%;
+          height: 605px;
+     }
+     .about>a>img:hover{
+          opacity: 60%;
+     }
+     /* 모달창 */
+     .modar{
+         display: none;
+         position: absolute;
+         top: 0;
+         left: 0;
+          width: 100%;
+          height: 800px;
+          text-align: center;
+          z-index: 200;
+          background-color: #fff;
+     }
+     .modar>.intro{
+        display: flex;
+     }
+     
+     .modar>.intro>.left{
+          width: 50%;
+          height: 935px;
+          text-align: center;
+     }
+     .modar>.intro>.left>img{
+          display: block;
+          width: 500px;
+          height: 150px;
+          margin-top: 30px;
+          margin-left: 35px;
+         
+     }
+     .modar>.intro>.left>p{
+          margin-top: 20px;
+          padding:10px 50px;
+          line-height: 25px;
+          text-align: left;
+          font-weight: 800;
+          font-size:20px;
+     }
+     
+     
+     .modar>.intro>.right{
+          width: 50%;
+          height: 935px;
+     }
+     .modar>.intro>.right>p{
+          margin-top: 40px;
+          padding:10px 50px;
+          line-height: 25px;
+          text-align: left;
+          font-weight: 800;
+          font-size:20px;
+     }
+     .modar>.intro>.right>img{
+          display: block;
+          width: 500px;
+          height: 150px;
+          margin-top: 20px;
+          margin-left: 35px;
+         
+     }
+     .modar>button{
+          width: 100px;
+          height: 35px;
+          position: absolute;
+          top: 0;
+          right: 20px;
+          color:#fff;
+          font-weight: 800;
+          font-size: 20px;
+          background-color: #000;
+          border: none;
+     }
+     .modar>button:hover{
+     
+          background-color: red;
+          border: none;
+     }
+     
+     /* 나의능력 */
+     .right{
+          width: 70%;
+     }
+     
+     
+     /* 스킬 */
+     
+     .right>.skill{
+          display: flex;
+          flex-flow: wrap;
+          width: 100%;
+          height: 605px;
+          text-align: center;
+          background-color: #fff;
+     }
+     
+     .right>.skill>.skill_line{
+          width: 100%;
+          height: 600px;
+     }
+     .right>.skill>.skill_line>li{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 60px;
+          margin-top: 20px;
+     }
+     .right>.skill>.skill_line>li>img{
+          display: block;
+          width: 50px;
+          border-radius: 50px;
+     }
+     .right>.skill>.skill_line>li>p{
+          width: 400px;
+          height: 20px;
+          position: relative;
+          line-height: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: rgb(193, 240, 241);
+          border-radius: 40px;
+     }
+     
+     
+        /* 에니메이션효과 */
+        /* html */
+        .right>.skill>.skill_line>li>.html {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.html:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.html:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.html:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     
+     /* css */
+     .right>.skill>.skill_line>li>.css {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.css:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.css:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.css:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     /* js */
+     .right>.skill>.skill_line>li>.js {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.js:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.js:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.js:hover:after {
+          width: 30%;
+          z-index: -1;
+      }
+     /* ps */
+     .right>.skill>.skill_line>li>.ps {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.ps:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.ps:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.ps:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     /* il */
+     .right>.skill>.skill_line>li>.il {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.il:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.il:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.il:hover:after {
+          width: 70%;
+          z-index: -1;
+      }
+     /* sass*/
+     .right>.skill>.skill_line>li>.sass {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.sass:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.sass:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.sass:hover:after {
+          width: 70%;
+          z-index: -1;
+      }
+     
+     
+     
+     /* 콘텍트 */
+     .right>.skill>.contact{
+          display: none;
+          width: 100%;
+          line-height: 200px;
+          padding-top: 120px;
+          padding-left: 60px;
+          background-color: rgb(155, 157, 161);
+     }
+     
+     .right>.skill>.contact>img{
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin-left: 150px;
+     }
+     .right>.skill>.contact>p{
+          width: 350px;
+          height: 50px;
+          line-height: 50px;
+          color: #fff;
+          font-weight: 800;
+          font-size: 20px;
+     }
+     
+     /* 포트폴리오 */
+     
+     .right>.portfolio{
+          position: relative;
+          width: 100%;
+          height: 500px;
+          margin-top: 50px;
+          margin-left: -600px;
+     }
+     
+     .right>.portfolio>h2{
+          height: 80px;
+          padding-top: 20px;
+          padding-left: 600px;
+          color: blue;
+          line-height: 80px;
+          text-align: center;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame{
+          display: flex;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          top: 100px;
+          width: 1300px;
+          line-height: 300px;
+          z-index: 100;
+     }
+     .right>.portfolio>.frame>div{
+          margin-left: 100px;
+          width: 400px;
+         
+     }
+     /* 1 */
+     .right>.portfolio>.frame>.frame1{}
+     
+     .right>.portfolio>.frame>.frame1>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame1>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 2 */
+     .right>.portfolio>.frame>.frame2{}
+     
+     .right>.portfolio>.frame>.frame2>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame2>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 3 */
+     .right>.portfolio>.frame>.frame3{}
+     
+     .right>.portfolio>.frame>.frame3>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame3>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 4 */
+     .right>.portfolio>.frame>.frame4{}
+     
+     .right>.portfolio>.frame>.frame4>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame4>a>img{
+          display: block;
+          width: 400px;
+     }
+     
+     /* 푸터영역 */
+     .right>.footer{
+          width: 1200px;
+          height: 35px;
+          
+          color:#fff;
+          text-align: center;
+          line-height: 35px;
+          font-weight: 800;
+          background-color: rgb(105, 105, 105);
+     }
+     
+     }
+     
+ 
+
+
+ /* 현재 사용중인 브라우저의 가로폭이 992 이면 w:750, 핑크배경 */
+ @media screen and (max-width: 992px) {
+
+     #wrap{
+          display: flex;
+          flex-flow: wrap;
+          position: relative;
+          width: 100%;
+     }
+     
+     /* 자기소개 */
+     .about{
+          
+          width: 100%;
+          height: 400px;
+          }
+     
+     .about>a>img{
+          display: block;
+          width: 100%;
+          height: 400px;
+     }
+     .about>a>img:hover{
+          opacity: 60%;
+     }
+     /* 모달창 */
+     .modar{
+         display: none;
+         position: absolute;
+         top: 10px;
+         left: 0;
+          width: 100%;
+          height: 1000px;
+          text-align: center;
+          z-index: 200;
+     }
+     .modar>.intro{
+        display: flex;
+     }
+     
+     .modar>.intro>.left{
+          width: 50%;
+          height: 935px;
+          text-align: center;
+     }
+     .modar>.intro>.left>img{
+          display: block;
+          width: 850px;
+          height: 150px;
+          margin-top: 40px;
+          margin-left: 50px;
+         
+     }
+     .modar>.intro>.left>p{
+          margin-top: 20px;
+          padding:10px 50px;
+          line-height: 30px;
+          text-align: left;
+          font-weight: 800;
+          font-size:16px;
+     }
+     
+     
+     .modar>.intro>.right{
+          width: 50%;
+          height: 935px;
+     }
+     .modar>.intro>.right>p{
+          margin-top: 200px;
+          line-height: 30px;
+          text-align: left;
+          font-weight: 800;
+          font-size:16px;
+     }
+     .modar>.intro>.right>img{
+          display: none;
+          width: 880px;
+          height: 300px;
+          margin-top: 20px;
+          margin-left: 35px;
+         
+     }
+     .modar>button{
+          width: 80px;
+          height: 30px;
+          position: absolute;
+          top: 0;
+          right: 20px;
+          color:#fff;
+          font-weight: 800;
+          font-size: 16px;
+          background-color: #000;
+          border: none;
+     }
+     .modar>button:hover{
+     
+          background-color: red;
+          border: none;
+     }
+     
+     /* 나의능력 */
+     .right{
+          width: 100%;
+     }
+     
+     
+     /* 스킬 */
+     
+     .right>.skill{
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          height: 400px;
+          text-align: center;
+          background-color: #fff;
+     }
+     
+     .right>.skill>.skill_line{
+          width: 100%;
+          height: 400px;
+     }
+     .right>.skill>.skill_line>li{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 50px;
+     }
+     .right>.skill>.skill_line>li>img{
+          display: block;
+          width: 50px;
+          border-radius: 50px;
+     }
+     .right>.skill>.skill_line>li>p{
+          width: 400px;
+          height: 20px;
+          position: relative;
+          line-height: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: rgb(193, 240, 241);
+          border-radius: 40px;
+     }
+     
+     
+        /* 에니메이션효과 */
+        /* html */
+        .right>.skill>.skill_line>li>.html {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.html:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.html:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.html:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     
+     /* css */
+     .right>.skill>.skill_line>li>.css {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.css:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.css:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.css:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     /* js */
+     .right>.skill>.skill_line>li>.js {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.js:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.js:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.js:hover:after {
+          width: 30%;
+          z-index: -1;
+      }
+     /* ps */
+     .right>.skill>.skill_line>li>.ps {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.ps:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.ps:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.ps:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     /* il */
+     .right>.skill>.skill_line>li>.il {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.il:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.il:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.il:hover:after {
+          width: 70%;
+          z-index: -1;
+      }
+     /* sass*/
+     .right>.skill>.skill_line>li>.sass {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.sass:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.sass:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.sass:hover:after {
+          width: 70%;
+          z-index: -1;
+      }
+     
+     
+     
+     /* 콘텍트 */
+     .right>.skill>.contact{
+          width: 100%;
+          height: 100px;
+          padding-left: 60px;
+          background-color: rgb(155, 157, 161);
+     }
+     
+     .right>.skill>.contact>img{
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin-left: 400px;
+          margin-top: -90px;
+     }
+     .right>.skill>.contact>p{
+          width: 350px;
+          height: 50px;
+          margin-left: 230px;
+          line-height: 50px;
+          color: #fff;
+          font-weight: 800;
+          font-size: 20px;
+     }
+     
+     /* 포트폴리오 */
+     
+     .right>.portfolio{
+          position: relative;
+          width: 100%;
+          height: 500px;
+          margin-top: 100px;
+          margin-left: 5px;
+        
+
+     }
+     
+     .right>.portfolio>h2{
+          height: 80px;
+          margin-left: -550px;
+          padding-top: 20px;
+          color: blue;
+          line-height: 80px;
+          text-align: center;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame{
+          display: flex;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          top: 100px;
+          width: 1300px;
+          line-height: 300px;
+          z-index: 100;
+     }
+     .right>.portfolio>.frame>div{
+          margin-left: 50px;
+          width: 400px;
+         
+     }
+     /* 1 */
+     .right>.portfolio>.frame>.frame1{}
+     
+     .right>.portfolio>.frame>.frame1>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame1>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 2 */
+     .right>.portfolio>.frame>.frame2{}
+     
+     .right>.portfolio>.frame>.frame2>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame2>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 3 */
+     .right>.portfolio>.frame>.frame3{}
+     
+     .right>.portfolio>.frame>.frame3>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame3>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 4 */
+     .right>.portfolio>.frame>.frame4{}
+     
+     .right>.portfolio>.frame>.frame4>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame4>a>img{
+          display: block;
+          width: 400px;
+     }
+     
+     /* 푸터영역 */
+     .right>.footer{
+          width: 992px;
+          height: 35px;
+          color:#fff;
+          text-align: center;
+          line-height: 35px;
+          font-weight: 800;
+          background-color: rgb(105, 105, 105);
+     }
+     
+ }
+
+ /* 현재 사용중인 브라우저의 가로폭이 768 이면 w:100%, 초록배경 */
+
+ @media screen and (max-width: 768px) {
+
+     #wrap{
+          display: flex;
+          flex-flow:row wrap;
+          position: relative;
+          width: 100%;
+     }
+     
+     /* 자기소개 */
+     .about{
+          
+          width: 100%;
+          height: 300px;
+          background-color: gray;
+          }
+     
+     .about>a>img{
+          display: block;
+          width: 100%;
+          height: 300px;
+     }
+     .about>a>img:hover{
+          opacity: 60%;
+     }
+     /* 모달창 */
+     .modar{
+         /* display: none; */
+         position: absolute;
+         top: 100px;
+         left: 0;
+          width: 100%;
+          height: 800px;
+          text-align: center;
+          z-index: 100;
+          background-color: #fff;
+     }
+     .modar>.intro{
+          display: flex;
+          flex-flow: row wrap;
+     }
+     
+     .modar>.intro>.left{
+          width: 100%;
+          height: 600px;
+          margin-top: 15px;
+          text-align: center;
+     }
+     .modar>.intro>.left>img{
+          display: none;
+          width: 200px;
+          height: 300px;
+          margin-top: 30px;
+          margin-left: 35px;
+         
+     }
+     .modar>.intro>.left>p{
+          margin-top: 20px;
+          line-height: 20px;
+          text-align: left;
+          font-weight: 800;
+          font-size:14px;
+     }
+     
+     
+     .modar>.intro>.right{
+          width: 100%;
+          height: 300px;
+          margin-top: -260px;
+     }
+     .modar>.intro>.right>p{
+          line-height: 20px;
+          text-align: left;
+          font-weight: 800;
+          font-size:14px;
+     }
+     .modar>.intro>.right>img{
+          display: none;
+          width: 880px;
+          height: 300px;
+          margin-top: 20px;
+          margin-left: 35px;
+         
+     }
+     .modar>button{
+          width: 80px;
+          height: 30px;
+          position: absolute;
+          right: 200px;
+          bottom: 0;
+          color:#fff;
+          font-weight: 800;
+          font-size: 12px;
+          background-color: #000;
+          border: none;
+     }
+     .modar>button:hover{
+     
+          background-color: red;
+          border: none;
+     }
+     
+     /* 나의능력 */
+     .right{
+          width: 100%;
+         
+     }
+     
+     
+     /* 스킬 */
+     
+     .right>.skill{
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          height: 400px;
+          text-align: center;
+     }
+     
+     .right>.skill>.skill_line{
+          width: 100%;
+     }
+     .right>.skill>.skill_line>li{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 50px;
+          margin-top: 5px;
+     }
+     .right>.skill>.skill_line>li>img{
+          display: block;
+          width: 50px;
+          border-radius: 50px;
+     }
+     .right>.skill>.skill_line>li>p{
+          width: 400px;
+          height: 20px;
+          position: relative;
+          line-height: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: rgb(193, 240, 241);
+          border-radius: 40px;
+     }
+     
+     
+        /* 에니메이션효과 */
+        /* html */
+        .right>.skill>.skill_line>li>.html {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.html:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.html:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.html:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     
+     /* css */
+     .right>.skill>.skill_line>li>.css {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.css:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.css:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.css:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     /* js */
+     .right>.skill>.skill_line>li>.js {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.js:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.js:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.js:hover:after {
+          width: 30%;
+          z-index: -1;
+      }
+     /* ps */
+     .right>.skill>.skill_line>li>.ps {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.ps:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.ps:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.ps:hover:after {
+          width: 90%;
+          z-index: -1;
+      }
+     /* il */
+     .right>.skill>.skill_line>li>.il {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.il:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.il:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.il:hover:after {
+          width: 70%;
+          z-index: -1;
+      }
+     /* sass*/
+     .right>.skill>.skill_line>li>.sass {
+          border: 1px solid #ffffff;
+          padding: 2% 14%;
+          position: relative;
+          z-index: 1;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+      }
+      .right>.skill>.skill_line>li>.sass:after {
+          content: "";
+          width: 0%;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
+          background: #ffffff;
+          border-radius: 40px;
+      }
+      .right>.skill>.skill_line>li>.sass:hover {
+          color: #333;
+      }
+      .right>.skill>.skill_line>li>.sass:hover:after {
+          width: 70%;
+          z-index: -1;
+      }
+     
+     
+     
+     /* 콘텍트 */
+     .right>.skill>.contact{
+          width: 100%;
+          height: 100px;
+          background-color: rgb(155, 157, 161);
+     }
+     
+     .right>.skill>.contact>img{
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin-top: -90px;
+          margin-left: 200px;
+
+    
+
+     }
+     .right>.skill>.contact>p{
+          width: 350px;
+          height: 100px;
+          margin-left: 40px;
+          color: #fff;
+          font-weight: 800;
+          font-size: 20px;
+   
+     }
+     
+     /* 포트폴리오 */
+     
+     .right>.portfolio{
+          position: relative;
+          width: 100%;
+          height: 500px;
+          margin-top: 300px;
+     }
+     
+     .right>.portfolio>h2{
+          height: 80px;
+          padding-top: 20px;
+         margin-left: 160px;
+          color: blue;
+          line-height: 80px;
+          text-align: center;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame{
+          display: flex;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          top: 100px;
+          width: 1224px;
+          line-height: 300px;
+          z-index: 100;
+     }
+     .right>.portfolio>.frame>div{
+          margin-left: 60px;
+          width: 400px;
+          margin-left: 120px;
+         
+     }
+     /* 1 */
+     .right>.portfolio>.frame>.frame1{}
+     
+     .right>.portfolio>.frame>.frame1>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame1>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 2 */
+     .right>.portfolio>.frame>.frame2{}
+     
+     .right>.portfolio>.frame>.frame2>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame2>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 3 */
+     .right>.portfolio>.frame>.frame3{}
+     
+     .right>.portfolio>.frame>.frame3>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame3>a>img{
+          display: block;
+          width: 400px;
+     }
+     /* 4 */
+     .right>.portfolio>.frame>.frame4{}
+     
+     .right>.portfolio>.frame>.frame4>a{
+          display: block;
+          color: white;
+          font-size: 30px;
+     }
+     .right>.portfolio>.frame>.frame4>a>img{
+          display: block;
+          width: 400px;
+     }
+     
+     /* 푸터영역 */
+     .right>.footer{
+          width: 768px;
+          height: 35px;
+          color:#fff;
+          text-align: center;
+          line-height: 35px;
+          font-weight: 800;
+          background-color: rgb(105, 105, 105);
+     }
+     
+     
+     
+ }

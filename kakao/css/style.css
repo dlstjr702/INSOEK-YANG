@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+#wrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 헤더영역 */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1000;
+}
+
+header:hover {
+  background-color: #fff;
+}
+
+/* 로고영역 */
+header > .logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+header > .logo > a {
+  display: block;
+  width: 108px;
+  background-image: url(../images/ico_recruit_200408.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+header:hover > .logo > a {
+  background-image: url(../images/logo.png);
+  background-size: contain;
+}
+
+/* gnb영역 */
+/* nav영역 */
+header > .gnb > .nav {
+  position: absolute;
+  left: 700px;
+  top: 10px;
+  display: flex;
+}
+
+header > .gnb > .nav > li {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+header > .gnb > .nav > li > a {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+header:hover > .gnb > .nav > li > a {
+  color: #000;
+}
+
+/* mnu영역 */
+
+header > .gnb > .nav > .on > .mnu {
+  display: none;
+  position: absolute;
+  left: -699px;
+  top: 55px;
+  /* display: none; */
+  width: 1902px;
+  background-color: #fff;
+  border-top: 1px solid #dedede;
+}
+
+header > .gnb > .nav > .on > .mnu > li {
+  float: left;
+  margin-left: 30px;
+}
+header > .gnb > .nav > .on > .mnu > li:first-child {
+  margin-left: 700px;
+}
+
+header > .gnb > .nav > .on > .mnu > li > a {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* log영역 */
+header > .log {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+}
+header > .log > p {
+}
+header > .log > p > .tit {
+}
+header > .log > p > .tit > a {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+}
+header:hover > .log > p > .tit > a {
+  color: #000;
+}
+
+/* 섹션영역 */
+section {
+  /* overflow: hidden; */
+  position: relative;
+  width: 100%;
+  height: 740px;
+  margin-top: -50px;
+  
+}
+section > .slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section > .slides > .frame {
+  display: flex;
+}
+section > .slides > .frame > li {
+  width: calc(100 * 11);
+}
+section > .frame > li > a {
+  display: block;
+  width: 100%;
+}
+section > .frame > li > a > img {
+  display: block;
+  width: 100%;
+  height: 720px;
+}
+
+/* 인디케이터 */
+section > .indicator {
+}
+/* prev */
+section > .indicator > .prev {
+  position: absolute;
+  left: 20px;
+  top: 340px;
+}
+section > .indicator > .prev > p {
+  display: block;
+  width: 50px;
+}
+section > .indicator > .prev > p > a {
+  display: block;
+  height: 50px;
+  background-image: url(../images/ico_recruit_200408.png);
+  background-position: -210px -190px;
+  text-indent: -9999px;
+}
+
+/* next */
+section > .indicator > .next {
+  position: absolute;
+  right: 20px;
+  top: 340px;
+}
+section > .indicator > .next > p {
+  width: 50px;
+}
+section > .indicator > .next > p > a {
+  display: block;
+  height: 50px;
+  background-image: url(../images/ico_recruit_200408.png);
+  background-position: -210px -240px;
+  text-indent: -9999px;
+}
+
+/* 아티클박스영역 */
+.article_box {
+  display: flex;
+  height: 400px;
+  margin-top: -20px;
+}
+/* 아티클1영역 */
+.article_box > .box1 {
+  width: 34%;
+}
+.article_box > .box1 > img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  
+}
+/* 아티클2영역 */
+.article_box > .box2 {
+  width: 32%;
+}
+.article_box > .box2 > img {
+     display: block;
+     width: 100%;
+}
+/* 아티클3영역 */
+.article_box > .box3 {
+  width: 34%;
+}
+.article_box > .box3 > img {
+  display: block;
+  width: 100%;
+}
+
+/* 푸터영역 */
+footer {
+  position: relative;
+  padding: 5px;
+  
+}
+
+/* 푸터메뉴1 */
+footer > .un_mnu {
+  display: flex;
+}
+
+footer > .un_mnu > p {
+  padding: 5px;
+}
+
+footer > .un_mnu > p:first-child {
+  border-right: 1px solid #000;
+}
+
+footer > .un_mnu > p > a {
+  display: block;
+}
+
+footer > .un_mnu > p:first-child > a:first-child {
+  font-weight: 800;
+}
+
+/* 푸터메뉴2 */
+footer > .un_mnu2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 만든사람 */
+footer > address {
+  width: 100%;
+  text-align: center;
+}
